@@ -1,6 +1,6 @@
 import React from "react";
-import BackgroundVideo from "./BackgroundVideo.mp4";
 import "./coles.css";
+import ReactPlayer from "react-player";
 
 const Coles = () => {
   return (
@@ -8,12 +8,12 @@ const Coles = () => {
       <h2>Eric Coles Coded Here</h2>
       <h2>Relax and have a cocktail on us</h2>
       <ReactPlayer
-        className="video"
-        url="s3://colesbucket22/cocktail.mp4"
+        url="https://colesbucket22.s3.eu-central-1.amazonaws.com/cocktail.mp4"
         playing={true}
         loop={true}
         muted={true}
         controls={false}
+        className="video"
       />
     </div>
   );
