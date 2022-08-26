@@ -7,9 +7,14 @@ const Coles = () => {
     <div>
       <h2>Eric Coles Coded Here</h2>
       <h2>Relax and have a cocktail on us</h2>
-      <div className="video">
-        <video autoPlay muted loop src={BackgroundVideo} type="video/mp4" />
-      </div>
+      <ReactPlayer
+        className="video"
+        url="s3://colesbucket22/cocktail.mp4"
+        playing={true}
+        loop={true}
+        muted={true}
+        controls={false}
+      />
     </div>
   );
 };
