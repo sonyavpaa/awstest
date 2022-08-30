@@ -9,7 +9,6 @@ pipeline {
             steps {
                 echo "testing an app"
                 sh "npm install"
-                sh "npm install react-scripts"
                 sh "npm run"
             }
         }
