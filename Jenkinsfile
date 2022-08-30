@@ -31,26 +31,23 @@ pipeline {
     
     tools {nodejs "node"}
     
-    stages {
-        stage('Build') {
+  stages {
+
+        stage ("build") {
             steps {
-                sh 'npm install'
+                echo "testing an app"
+                sh 'npm start'
             }
         }
-        stage('Test') {
+        stage ("test") {
             steps {
-                sh "chmod +x -R ./scripts/test.sh"
-                sh './scripts/test.sh'
+                echo "testing my app..."
             }
         }
-         stage('Deliver') {
-                            steps {
-                                sh "chmod +x ./scripts/deliver.sh"
-                                sh './scripts/deliver.sh'
-                                input message: 'Finished using the Rat-in-maze app? (Click "Proceed" to continue)'
-                                sh "chmod +x ./scripts/kill.sh"
-                                sh './scripts/kill.sh'
-                            }
-                        }
+        stage ("deploy") {
+            steps {
+                echo "testing my app..."
             }
-      }
+        }
+    }
+}
