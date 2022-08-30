@@ -5,7 +5,7 @@ pipeline {
 
         stage ("build") {
             steps {
-                echo "testing my app..."
+                npm start
             }
         }
         stage ("test") {
