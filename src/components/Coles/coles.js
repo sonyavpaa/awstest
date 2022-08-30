@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundVideo from "./BackgroundVideo.mp4";
+import backgroundVideo from "./backgroundVideo.mp4";
 import "./coles.css";
 
 const Coles = () => {
