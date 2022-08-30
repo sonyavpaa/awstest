@@ -5,7 +5,7 @@ pipeline {
 
         stage ("build") {
             steps {
-                npm start
+                npm build
             }
         }
         stage ("test") {
