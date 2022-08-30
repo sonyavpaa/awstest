@@ -5,7 +5,7 @@ pipeline {
 
         stage ("build") {
             steps {
-                sh 'npm start'
+                sh 'npm i'
             }
         }
         stage ("test") {
